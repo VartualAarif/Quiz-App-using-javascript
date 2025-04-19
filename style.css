@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+    padding: 1rem;
+    background-image: none;
+    background-color: #dce3e9;
+  }
+  
+  h1, h5 {
+    font-weight: 700;
+  }
+  
+  main {
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  /* Start Quiz */
+  .begin-quiz {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Progress Bar */
+  .progress {
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    font-weight: 600;
+  }
+  
+  /* Question Section */
+  .question-area {
+    padding: 1rem 0;
+  }
+  
+  .question-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Options */
+  .option-area .form-check {
+    margin: 0.5rem 0;
+  }
+  
+  .form-check-label {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .form-check-label:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .btn-check:checked + .form-check-label {
+    background-color: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd;
+  }
+  
+  /* Error Message */
+  .error-msg {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  /* Buttons */
+  .buttons .btn {
+    min-width: 120px;
+    margin: 0.5rem;
+  }
+  
+  .restart-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  
+  /* Results Section */
+  .end-area {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-message {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Share Buttons */
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .share-buttons a {
+    width: 200px;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .share-buttons a:hover {
+    opacity: 0.85;
+  }
+  
+  /* Responsive */
+  @media (min-width: 576px) {
+    .share-buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .share-buttons a {
+      margin: 0 0.5rem;
+    }
+    .progress {
+        height: 25px;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      
+      .progress-bar {
+        background: linear-gradient(to right, #0d6efd, #6610f2);
+        color: #fff;
+        font-weight: 600;
+        transition: width 0.4s ease;
+      }
+      
+      .share-buttons a {
+        margin: 0.25rem;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: 600;
+        width: 220px;
+        text-decoration: none;
+      }
+      
+  }
+  
